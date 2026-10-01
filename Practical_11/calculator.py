@@ -1,63 +1,17 @@
-# Exercise: Calculate Total Price
+def calculate_total(price: float, quantity: int) -> float:
+    return price * quantity
 
-## Objective
 
-To create a Python program that calculates the total price using the given price and quantity.
+def main() -> None:
+    price = 100.0
+    quantity = 3
 
-## Files
+    total = calculate_total(price, quantity)
 
-* `calculator.py` – Contains the function to calculate the total price.
-* `README.md` – Contains the project description and instructions.
+    print("Price:", price)
+    print("Quantity:", quantity)
+    print("Total:", total)
 
-## Function
 
-### calculate_total()
-
-The `calculate_total()` function takes two inputs:
-
-* `price` – The price of one item.
-* `quantity` – The number of items.
-
-It calculates the total using:
-
-**Total = Price × Quantity**
-
-## Program Details
-
-The program uses:
-
-* Type hints
-* Functions
-* `main()` function
-* Conditional execution using `if __name__ == "__main__"`
-
-## Example
-
-Given:
-
-* Price = `100.0`
-* Quantity = `3`
-
-The total is:
-
-`100.0 × 3 = 300.0`
-
-## Expected Output
-
-```text
-Price: 100.0
-Quantity: 3
-Total: 300.0
-```
-
-## How to Run
-
-Open the project folder in VS Code and run:
-
-```bash
-python calculator.py
-```
-
-## Conclusion
-
-The program successfully calculates the total price based on the given price and quantity using a Python function with type hints.
+if __name__ == "__main__":
+    main()
